@@ -17,28 +17,28 @@ export const decrement = () => {
 	};
 };
 
-export const add = () => {
+export const add = (value) => {
 	return {
 		type: ADD,
-		value: 5,
+		value: value,
 	};
 };
 
-export const subtract = () => {
+export const subtract = (value) => {
 	return {
 		type: SUBTRACT,
-		value: 5,
+		value: value,
 	};
 };
 
-export const store_result = (result) => {
+export const storeResult = (result) => {
 	return {
 		type: STORE_RESULT,
 		result: result,
 	};
 };
 
-export const delete_result = (id) => {
+export const deleteResult = (id) => {
 	return {
 		type: DELETE_RESULT,
 		resultElId: id,

@@ -8,8 +8,8 @@ import {
 	decrement,
 	add,
 	subtract,
-	store_result,
-	delete_result,
+	storeResult,
+	deleteResult,
 } from "../../store/actions/actions";
 
 class Counter extends Component {
@@ -98,10 +98,10 @@ const mapDispatchToProps = (dispatch) => {
 	return {
 		onIncrementCounter: () => dispatch(increment()),
 		onDecrementCounter: () => dispatch(decrement()),
-		onAddCounter: () => dispatch(add()),
-		onSubtractCounter: () => dispatch(subtract()),
-		onStoreResult: (result) => dispatch(store_result(result)),
-		onDeleteResult: (id) => dispatch(delete_result(id)),
+		onAddCounter: () => dispatch(add(5)),
+		onSubtractCounter: () => dispatch(subtract(5)),
+		onStoreResult: (result) => dispatch(storeResult(result)),
+		onDeleteResult: (id) => dispatch(deleteResult(id)),
 	};
 };
 
